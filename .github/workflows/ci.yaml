@@ -43,7 +43,7 @@ jobs:
       - name: Matrix => (${{ matrix.service }} ${{ matrix.version}})
         run: |
 
-          matrix_values=${{ toJSON(matrix) }}
+          matrix_values="${{ toJSON(matrix) }}"
           echo "job-total=${{ strategy.job-total }}"
           echo "job-index=${{ strategy.job-index }}"
           echo ${matrix_values}
