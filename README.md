@@ -24,3 +24,4 @@ curl --location --request POST 'https://api.github.com/repos/{{owner}}/{{repo}}/
 ## REF
 - https://thekevinwang.com/2021/09/19/github-actions-dynamic-matrix/ (base for this example)
 - https://hanxiao.io/2021/01/24/Speedup-CI-Workflow-in-Github-Actions-via-Strategy-Matrix/ (dynamic directories to matrix jobs)
+- https://tomasvotruba.com/blog/2020/11/16/how-to-make-dynamic-matrix-in-github-actions/
