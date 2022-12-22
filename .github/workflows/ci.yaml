@@ -42,5 +42,8 @@ jobs:
     steps:
       - name: Matrix => (${{ matrix.service }} ${{ matrix.version}})
         run: |
-          echo ${{ matrix.service }}
-          echo ${{ matrix.version }}
+
+          matrix_values=$(echo ${{ matrix }})
+          echo ${matrix_values}
+          # echo ${{ matrix.service }}
+          # echo ${{ matrix.version }}
